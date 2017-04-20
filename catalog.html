@@ -7,6 +7,7 @@
   <body>
     <header class="main-header">
       <div class="container">
+        <img src="http://placehold.it/150x100" alt="логотип">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -38,18 +39,20 @@
  <li><a href="#">Магазин</a></li>
  <li><a href="#">Средства ухода</a></li>
  </ul>
+ <form action="#" method="post">
  <h2>Производители:</h2>
- <input type="checkbox" id="check1"><label for="check1">Baxter of California</label>
- <input type="checkbox" id="check2"><label for="check2">Mr Natty</label>
- <input type="checkbox" id="check3"><label for="check3">Suavecito</label>
- <input type="checkbox" id="check4"><label for="check4">Malin+Goetz</label>
- <input type="checkbox" id="check5"><label for="check5">Murray's</label>
- <input type="checkbox" id="check6"><label for="check6">American crew</label>
+ <input type="checkbox" name="firm" id="check1"><label for="check1">Baxter of California</label>
+ <input type="checkbox" name="firm" id="check2"><label for="check2">Mr Natty</label>
+ <input type="checkbox" name="firm" id="check3"><label for="check3">Suavecito</label>
+ <input type="checkbox" name="firm" id="check4"><label for="check4">Malin+Goetz</label>
+ <input type="checkbox" name="firm" id="check5"><label for="check5">Murray's</label>
+ <input type="checkbox" name="firm" id="check6"><label for="check6">American crew</label>
  <h2>Группы товаров:</h2>
- <input type="radio" id="radio1"><label for="radio1">Бритвенные принадлежности</label>
- <input type="radio" id="radio2"><label for="radio2">Средства для ухода</label>
- <input type="radio" id="radio3"><label for="radio3">Аксессуары</label>
- <a class="btn" href="#">Показать</a>
+ <label><input type="radio" name="product-groups" value="shaving-accessories">Бритвенные принадлежности</label>
+ <label><input type="radio" name="product-groups" value="care-products">Средства для ухода</label>
+ <label><input type="radio" name="product-groups" value="accessories">Аксессуары</label>
+ <input type="submit" value="Показать">
+</form>
  <article class="user_review">
      <img src="URL">
      <p>Набор для путешествий "Baxted of California"</p>
@@ -86,7 +89,7 @@
      <p>3 900 руб.</p>
      <a class="btn" href="#">Купить</a>
     </article>
- <ul id="page">
+ <ul class="pagination">
  <li><a href="#">1</a></li>
  <li><a href="#">2</a></li>
  <li><a href="#">3</a></li>
